@@ -1,0 +1,9 @@
+{
+  "short_name": "Xela Oladipupo",
+  "name": "Xela Oladipupo's Profile",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
