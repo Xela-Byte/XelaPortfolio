@@ -47,7 +47,7 @@ const NavBar = ({ sticky }) => {
           initial="initial"
           whileInView="animate"
         >
-          Xela🥹!
+          Xela🛠️!
         </NavLogo>
         {windowWidth > 990 ? (
           <>
