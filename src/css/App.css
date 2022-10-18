@@ -13,6 +13,16 @@
   src: url("../assets/fonts/CentraNo2-Book.ttf");
   font-weight: 400;
 }
+@font-face {
+  font-family: Monts;
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +36,17 @@ body {
   font-family: "Centra", sans-serif;
   scroll-behavior: smooth;
   transition: all 0.4s ease-in;
+}
+
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: #222020;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eee;
+  border-radius: 5px;
 }
 
 a {

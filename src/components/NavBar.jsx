@@ -153,9 +153,9 @@ const NavBar = ({ sticky }) => {
               initial="initial"
               animate="animate"
             >
-              <CollapsibleNavbarLink link={"🏡Home"} />
-              <CollapsibleNavbarLink link={"🛠️Skills"} />
-              <CollapsibleNavbarLink link={"⚗️Projects"} />
+              <CollapsibleNavbarLink link={"Home"} />
+              <CollapsibleNavbarLink link={"Skills"} />
+              <CollapsibleNavbarLink link={"Projects"} />
             </CollapsibleNavbarContent>
           )}
         </AnimatePresence>

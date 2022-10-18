@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   ProjectDescText,
   ProjectHeaderText,
@@ -7,13 +7,13 @@ import {
   ProjectsWrapper,
   ProjectTab,
   ProjectTabContainer,
-} from '../styled/Projects';
-import ScreenShots from '../components/ScreenShots';
-import Description from '../components/Description';
-import Links from '../components/Links';
+} from "../styled/Projects";
+import ScreenShots from "../components/ScreenShots";
+import Description from "../components/Description";
+import Links from "../components/Links";
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState('');
+  const [activeTab, setActiveTab] = useState("");
 
   const handleActiveTab = (tabActive) => {
     setActiveTab(tabActive);
@@ -21,21 +21,22 @@ const Projects = () => {
 
   let tab;
   switch (activeTab) {
-    case 'screenshots':
+    case "screenshots":
       tab = <ScreenShots />;
       break;
-    case 'links':
+    case "links":
       tab = <Links />;
       break;
-    case 'description':
+    case "description":
       tab = <Description />;
       break;
 
     default:
+      tab = <ScreenShots />;
       break;
   }
   return (
-    <ProjectsWrapper id='#projects'>
+    <ProjectsWrapper id="Projects">
       <ProjectsContainer>
         <ProjectHeaderText>Projects</ProjectHeaderText>
         <ProjectDescText>
@@ -44,13 +45,13 @@ const Projects = () => {
           exercitationem repellendus!
         </ProjectDescText>
         <ProjectTabContainer>
-          <ProjectTab onClick={() => handleActiveTab('screenshots')}>
+          <ProjectTab onClick={() => handleActiveTab("screenshots")}>
             ScreenShots
           </ProjectTab>
-          <ProjectTab onClick={() => handleActiveTab('links')}>
+          <ProjectTab onClick={() => handleActiveTab("links")}>
             Links
           </ProjectTab>
-          <ProjectTab onClick={() => handleActiveTab('description')}>
+          <ProjectTab onClick={() => handleActiveTab("description")}>
             Description
           </ProjectTab>
         </ProjectTabContainer>

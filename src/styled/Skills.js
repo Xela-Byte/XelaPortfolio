@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import { Centering, colors, fontSizes } from './UniversalStyles';
+import styled from "styled-components";
+import { Centering, colors, fontSizes } from "./UniversalStyles";
 
 export const SkillsWrapper = styled.div`
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
   background: ${colors.black};
+  font-family: "Monts", sans-serif;
 `;
 
 export const SkillsContainer = styled.section`
@@ -39,6 +40,7 @@ export const SkillDescText = styled.p`
   font-weight: 400;
 
   @media screen and (max-width: 990px) {
+    margin-top: 5%;
     margin-bottom: 5%;
     font-size: ${fontSizes.medium};
   }

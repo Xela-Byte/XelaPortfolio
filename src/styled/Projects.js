@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Centering, colors, fontSizes } from './UniversalStyles';
+import styled from "styled-components";
+import { Centering, colors, fontSizes } from "./UniversalStyles";
 
 export const ProjectsWrapper = styled.div`
   width: 100%;
@@ -7,6 +7,7 @@ export const ProjectsWrapper = styled.div`
   background: ${colors.black};
   color: ${colors.white};
   ${Centering}
+  font-family: 'Monts', sans-serif;
 `;
 
 export const ProjectsContainer = styled.div`
@@ -45,24 +46,22 @@ export const ProjectTabContainer = styled.div`
 `;
 
 export const ProjectTab = styled.div`
-  width: 20%;
+  width: 15%;
   padding: 20px;
   border-radius: 15px;
   ${Centering}
-  background: linear-gradient(
+  background: ${colors.deepBlack};
+  box-shadow: 5px 5px 10px #e0e0e7, -3px -3px 6px #eee;
+  /* background: linear-gradient(
     to right bottom,
     ${colors.lightPurple},
     ${colors.deepPurple}
-  );
+  ); */
   cursor: pointer;
   &:hover {
-    background: linear-gradient(
-      to right bottom,
-      ${colors.deepPurple},
-      ${colors.lightPurple}
-    );
+    box-shadow: 3px 3px 10px #e0e0e7, -5px -5px 10px #eee;
   }
-  font-size: 23px;
+  font-size: 3vh;
   font-weight: 400;
   @media screen and (max-width: 990px) {
     width: fit-content;

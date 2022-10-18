@@ -2,7 +2,23 @@ import { motion } from "framer-motion";
 import { navBarTabVariant } from "../animationVariants/navbarVariants";
 import { CollapsibleNavbarLinkContainer } from "../styled/NavBar";
 
-const CollapsibleNavbarLink = ({ link }) => {
+const CollapsibleNavbarLink = ({ link, refProps }) => {
+  let linkText = "";
+  switch (link) {
+    case "Home":
+      linkText = "🏡 Home";
+      break;
+    case "Projects":
+      linkText = "⚗️ Projects";
+      break;
+    case "Skills":
+      linkText = "🛠️ Skills";
+      break;
+
+    default:
+      break;
+  }
+
   return (
     <CollapsibleNavbarLinkContainer
       as={motion.div}
@@ -13,8 +29,12 @@ const CollapsibleNavbarLink = ({ link }) => {
       whileTap={{
         scale: 1.1,
       }}
+      onClick={(e) => {
+        e.preventDefault();
+        window.location.href = `#${link}`;
+      }}
     >
-      <a href={`#${link.slice(1)}`}>{link}</a>
+      <p>{linkText}</p>
     </CollapsibleNavbarLinkContainer>
   );
 };
