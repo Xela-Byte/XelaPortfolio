@@ -66,6 +66,7 @@ export const stickyNavBar = {
   top: 0,
   background: colors.black,
   height: "12vh",
+  border: "1px solid rgba(225, 225, 255, 0.2)",
 };
 
 export const CollapsibleNavbarContainer = styled.div`

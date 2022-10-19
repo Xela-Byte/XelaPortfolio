@@ -3,11 +3,14 @@ import { Centering, colors, fontSizes } from "./UniversalStyles";
 
 export const ProjectsWrapper = styled.div`
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   background: ${colors.black};
   color: ${colors.white};
   ${Centering}
   font-family: 'Monts', sans-serif;
+  @media screen and (max-width: 990px) {
+    height: 110vh;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -30,9 +33,9 @@ export const ProjectDescText = styled.div`
   width: 40%;
   font-size: 3vh;
   text-align: center;
-  margin: auto;
+  margin: 3% auto;
   @media screen and (max-width: 990px) {
-    text-align: start;
+    margin: 5% auto;
     width: 100%;
     font-size: ${fontSizes.medium};
   }
@@ -51,15 +54,10 @@ export const ProjectTab = styled.div`
   border-radius: 15px;
   ${Centering}
   background: ${colors.deepBlack};
-  box-shadow: 5px 5px 10px #e0e0e7, -3px -3px 6px #eee;
-  /* background: linear-gradient(
-    to right bottom,
-    ${colors.lightPurple},
-    ${colors.deepPurple}
-  ); */
+  box-shadow: 5px 5px 10px #222020, -15px -10px 20px #00040d;
   cursor: pointer;
   &:hover {
-    box-shadow: 3px 3px 10px #e0e0e7, -5px -5px 10px #eee;
+    box-shadow: 3px 3px 10px #00040d, -5px -5px 10px #222020;
   }
   font-size: 3vh;
   font-weight: 400;

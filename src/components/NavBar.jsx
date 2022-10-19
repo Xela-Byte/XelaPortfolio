@@ -25,7 +25,7 @@ import CollapsibleNavbarLink from "./CollapsibleNavbarLink";
 
 const NavBar = ({ sticky }) => {
   const windowWidth = useGetWindowSize().innerWidth;
-  const { position, top, background, height } = sticky;
+  const { position, top, background, height, border } = sticky;
 
   const [showLinks, setShowLinks] = useState(false);
   const showLink = () => {
@@ -39,6 +39,7 @@ const NavBar = ({ sticky }) => {
           top: top,
           background: background,
           height: height,
+          borderBottom: border,
         }}
       >
         <NavLogo
